@@ -9,7 +9,7 @@ import java.util.List;
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction, Integer> {
-  List<Transaction> findAllByTransactionDateGreaterThanEqualAAndTransactionDateLessThanEqual(Date startDate, Date endDate);
+  List<Transaction> findAllByTransactionDateGreaterThanEqualAndTransactionDateLessThanEqual(Date startDate, Date endDate);
 
   List<Transaction> findAllByUserId(Integer userId);
 }
