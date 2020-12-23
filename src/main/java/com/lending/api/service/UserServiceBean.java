@@ -1,12 +1,15 @@
-package com.lending.api.serviceImpl;
+package com.lending.api.service;
 
 import com.lending.api.entity.User;
 import com.lending.api.repository.UserRepository;
-import com.lending.api.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Slf4j
+@Service
 public class UserServiceBean implements UserService {
   @Autowired
   private UserRepository userRepository;
