@@ -29,7 +29,7 @@ public class Transaction {
   private int transactionId;
 
   @Column(name = Transaction.COLUMN_AMOUNT)
-  private Double amount;
+  private double amount;
 
   @Column(name = Transaction.COLUMN_TRANSACTION_DATE)
   private Date transactionDate;
@@ -40,7 +40,7 @@ public class Transaction {
   @Column(name = Transaction.COLUMN_USER_ID)
   private int userId;
 
-  public Transaction(Double amount, Date transactionDate, String transactionType, int userId) {
+  public Transaction(double amount, Date transactionDate, String transactionType, int userId) {
     this.amount = amount;
     this.transactionDate = transactionDate;
     this.transactionType = transactionType;
